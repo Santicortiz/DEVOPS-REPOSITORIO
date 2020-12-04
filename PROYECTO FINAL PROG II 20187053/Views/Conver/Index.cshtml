@@ -1,0 +1,45 @@
+﻿@model PROYECTO_FINAL_PROG_II_20187053.Models.Conversor
+@{
+    ViewBag.Title = "/Index";
+}
+
+<html>
+<head>
+
+</head>
+
+<body>
+    <h2>Conversor de unidades</h2>
+    <div class="row">
+        @using (Html.BeginForm("/Index", "Conver", FormMethod.Post))
+        {<div class="form-group">
+                <label for="no1">Cantidad</label>
+                <input type="text" class="form-control" id="no1" name="no1" value="@Model.no1" />
+            </div>
+
+            <div class="form-group">
+                <label for="tot">Conversion</label>
+                <input type="text" class="form-control" id="tot" name="tot" value="@Model.tot" />
+            </div>
+
+            <button type="submit" class="btn btn-default" id="sub" value="sub" name="calculate">Peso a $USD</button>
+            <button type="submit" class="btn btn-default" id="divv" value="divv" name="calculate">Dolar a peso</button>
+
+            <h2>Conversor de Farenheit a Celcius</h2>
+            <div class="form-group">
+                <label for="no3">Cantidad</label>
+                <input type="text" class="form-control" id="no3" name="no3" value="@Model.no3" />
+            </div>
+
+            <div class="form-group">
+                <label for="tot">Conversion</label>
+                <input type="text" class="form-control" id="totl" name="totl" value="@Model.totl" />
+            </div>
+
+            <button type="submit" class="btn btn-default" id="CaF" value="CF" name="CaF">Celcius a Farenheit</button>
+            <button type="submit" class="btn btn-default" id="FaC" value="divv" name="FaC">Farenheit a Celcius</button>}
+    </div>
+
+</body>
+
+</html>

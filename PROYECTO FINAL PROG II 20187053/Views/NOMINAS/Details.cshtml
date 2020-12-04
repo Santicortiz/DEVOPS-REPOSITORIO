@@ -1,0 +1,42 @@
+﻿@model PROYECTO_FINAL_PROG_II_20187053.Models.NOMINAS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NOMINAS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(tabla => tabla.Monto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

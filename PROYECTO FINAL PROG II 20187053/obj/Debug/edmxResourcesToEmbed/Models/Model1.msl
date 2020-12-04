@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PROYECTOFINALModelStoreContainer" CdmEntityContainer="PROYECTOFINALEntities">
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="IsTypeOf(PROYECTOFINALModel.Empleados)">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Salario" ColumnName="Salario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOMINAS">
+      <EntityTypeMapping TypeName="IsTypeOf(PROYECTOFINALModel.NOMINAS)">
+        <MappingFragment StoreEntitySet="NOMINAS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

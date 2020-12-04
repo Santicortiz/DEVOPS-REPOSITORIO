@@ -1,0 +1,40 @@
+﻿@model PROYECTO_FINAL_PROG_II_20187053.Models.calc
+    @{
+        ViewBag.Title = "/Index";
+    }
+   
+    <html>
+    <head>
+
+      
+    </head>
+
+    <body>
+        <h2>Calculadora</h2>
+        <div class="row">
+            @using (Html.BeginForm("/Index", "calc", FormMethod.Post))
+            {<div class="form-group">
+                    <label for="no1">1mer número</label>
+                    <input type="text" class="form-control" id="no1" name="no1" value="@Model.no1" />
+                </div>
+
+                <div class="form-group">
+                    <label for="no2">2do número</label>
+                    <input type="text" class="form-control" id="no2" name="no2" value="@Model.no2" />
+                </div>
+
+                <div class="form-group">
+                    <label for="tot">TOTAL</label>
+                    <input type="text" class="form-control" id="tot" name="tot" value="@Model.tot" />
+                </div>
+
+                <button type="submit" class="btn btn-default" id="add" value="add" name="calculate">+</button>
+                <button type="submit" class="btn btn-default" id="min" value="min" name="calculate">-</button>
+                <button type="submit" class="btn btn-default" id="sub" value="sub" name="calculate">x</button>
+                <button type="submit" class="btn btn-default" id="divv" value="divv" name="calculate">/</button>}
+        </div>
+      
+    </body>
+
+    </html>
+

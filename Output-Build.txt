@@ -1,0 +1,3 @@
+﻿1>------ Rebuild All started: Project: PROYECTO FINAL PROG II 20187053, Configuration: Debug Any CPU ------
+1>  PROYECTO FINAL PROG II 20187053 -> C:\Users\dell\Desktop\PROYECTO FINAL PROG II 20187053\PROYECTO FINAL PROG II 20187053\bin\PROYECTO FINAL PROG II 20187053.dll
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
